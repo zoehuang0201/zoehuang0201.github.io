@@ -3,7 +3,10 @@
   <ul class="list  list--nav">
     {% for item in site.navigation_header %}
 
-      {% if item.url contains '://' %}
+      {% assign first_char = item.url | slice: 0, 1 %}
+      {% if first_char == '#' %}
+        {% assign url = item.url %}
+      {% elsif item.url contains '://' %}
         {% assign url = item.url %}
       {% else %}
         {% assign url = item.url | relative_url %}
