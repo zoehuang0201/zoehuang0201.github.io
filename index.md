@@ -18,5 +18,5 @@ This starter site is built with Jekyll and the Alembic theme. Use this page for 
 ## Next updates
 
 - Replace this text with Zoe's bio.
-- Add project pages or portfolio links.
+- Add CV details and publication records.
 - Update images, colors, and navigation.
