@@ -36,14 +36,40 @@
 
   .header {
     background: #eef2ed;
+    padding-top: 3.5rem;
   }
 
   .header > .container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 1200px;
     background: transparent;
+  }
+
+  .header > .container::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    height: 3.5rem;
+    transform: translateX(-50%);
+    z-index: -1;
+    background: #eef2ed;
+    box-shadow: 0 0.08rem 0.35rem rgba(0, 0, 0, 0.08);
   }
 
   .header .nav {
     margin-left: auto;
+  }
+
+  html {
+    scroll-padding-top: 4.5rem;
   }
 
   .layout-page.zoe-huang .feature {
